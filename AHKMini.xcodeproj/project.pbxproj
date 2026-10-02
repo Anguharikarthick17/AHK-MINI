@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74168D85ACD14CE4B86AE169 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD819B37AA04075B1EA3A20 /* AppDelegate.swift */; };
+		10F2EF38A5EF4EAFA6D8ED77 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E0957144634AA787206B70 /* main.swift */; };
+		B7E81A27A5CC436E8DA10F85 /* MiniGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812016E1C4914983AFCFC1DF /* MiniGameScene.swift */; };
+		F62C601FA2AD4FA6ACEAC6DC /* ArcadeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D3B4E0764480E9387DB33 /* ArcadeManager.swift */; };
+		32B10B1B1DEB48C680CF6BBA /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00097E71A6F54E1EA3D1F6A2 /* GameProtocol.swift */; };
+		ABB9288A57634ED2B90605B7 /* BreakGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FA298405504BBBA4D66F56 /* BreakGame.swift */; };
+		0E58B3CCC8E2439DA7FB1411 /* HopGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262A3DE2D4E43C5B51B3418 /* HopGame.swift */; };
+		3DB4D09CFFD14E6896F712E7 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCD50D67F25495DA4983503 /* MemoryGame.swift */; };
+		C7703E4B8AB14B8EBF00044A /* PongGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C72E66516A43E6ABD08098 /* PongGame.swift */; };
+		42BC299CDB1D4B4A8F0331E1 /* RacerGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721CB823819149EF8D50D71E /* RacerGame.swift */; };
+		56BAFB9090F24701BA626262 /* GroundNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BC1F7D72C84AB18CF24E79 /* GroundNode.swift */; };
+		173495E0D4D64BB29740E790 /* ObstacleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD206FB4CD743678E487FDD /* ObstacleNode.swift */; };
+		01DF4652F33B43809071405F /* PlayerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B3387FE7B34CE99C3EC726 /* PlayerNode.swift */; };
+		9684EA22812E4AA69E16333B /* RunnerGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5ABA44A5514BB78B7464F6 /* RunnerGame.swift */; };
+		47C49E007B044BB38868A496 /* SnakeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C593BEAB3DE0447C8999D97A /* SnakeGame.swift */; };
+		4CD773FD2CD047C3A1D67065 /* SpaceGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EBFB2F5D8A409689D0722B /* SpaceGame.swift */; };
+		E6E2AC804E974745BC082CDA /* ScoreStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C488213C00854438ACD8D763 /* ScoreStore.swift */; };
+		8D354D12F8154B81B4A7D79B /* ArcadeHUDNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A139EDD696849979DF31D8C /* ArcadeHUDNode.swift */; };
+		C5A5C3660AD241C19D0DD36B /* GameSelectorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24541A198EC493791F28384 /* GameSelectorNode.swift */; };
+		AB068E1F1AAD493D97BAE9F3 /* MiniPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07E751EDA424D5290FDE667 /* MiniPanel.swift */; };
+		2D4217ADC64B40F795483A3A /* MiniWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43521DFCDE8541C98A17270F /* MiniWindowController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AAD819B37AA04075B1EA3A20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate.swift"; sourceTree = "<group>"; };
+		82E0957144634AA787206B70 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "main.swift"; sourceTree = "<group>"; };
+		812016E1C4914983AFCFC1DF /* MiniGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MiniGameScene.swift"; sourceTree = "<group>"; };
+		1D4D3B4E0764480E9387DB33 /* ArcadeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArcadeManager.swift"; sourceTree = "<group>"; };
+		00097E71A6F54E1EA3D1F6A2 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameProtocol.swift"; sourceTree = "<group>"; };
+		B8FA298405504BBBA4D66F56 /* BreakGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BreakGame.swift"; sourceTree = "<group>"; };
+		F262A3DE2D4E43C5B51B3418 /* HopGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HopGame.swift"; sourceTree = "<group>"; };
+		0FCD50D67F25495DA4983503 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MemoryGame.swift"; sourceTree = "<group>"; };
+		95C72E66516A43E6ABD08098 /* PongGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PongGame.swift"; sourceTree = "<group>"; };
+		721CB823819149EF8D50D71E /* RacerGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RacerGame.swift"; sourceTree = "<group>"; };
+		F5BC1F7D72C84AB18CF24E79 /* GroundNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GroundNode.swift"; sourceTree = "<group>"; };
+		2AD206FB4CD743678E487FDD /* ObstacleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObstacleNode.swift"; sourceTree = "<group>"; };
+		F5B3387FE7B34CE99C3EC726 /* PlayerNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerNode.swift"; sourceTree = "<group>"; };
+		EF5ABA44A5514BB78B7464F6 /* RunnerGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RunnerGame.swift"; sourceTree = "<group>"; };
+		C593BEAB3DE0447C8999D97A /* SnakeGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SnakeGame.swift"; sourceTree = "<group>"; };
+		52EBFB2F5D8A409689D0722B /* SpaceGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpaceGame.swift"; sourceTree = "<group>"; };
+		C488213C00854438ACD8D763 /* ScoreStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScoreStore.swift"; sourceTree = "<group>"; };
+		6A139EDD696849979DF31D8C /* ArcadeHUDNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArcadeHUDNode.swift"; sourceTree = "<group>"; };
+		B24541A198EC493791F28384 /* GameSelectorNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameSelectorNode.swift"; sourceTree = "<group>"; };
+		B07E751EDA424D5290FDE667 /* MiniPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MiniPanel.swift"; sourceTree = "<group>"; };
+		43521DFCDE8541C98A17270F /* MiniWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MiniWindowController.swift"; sourceTree = "<group>"; };
+		586E00567ABB4DC5A664C180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39380D4F9FD2447983F176D8 /* AHKMini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AHKMini.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AA7F8A80A3348EE94762342 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE51423342D143019E7674B7 = {
+			isa = PBXGroup;
+			children = (
+				A9717A56F7514CE89C0B1EE1 /* AHKMini */,
+				5416A29A501941729AFDD232 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9717A56F7514CE89C0B1EE1 /* AHKMini */ = {
+			isa = PBXGroup;
+			children = (
+				CBFDAF41B13D42C4BAA92F50 /* App */,
+				C1731CE8240244E1A87492A6 /* Game */,
+				E61A239170214F4D82B6927C /* GameEngine */,
+				E94627C88ABA41E39A6A9178 /* Games */,
+				FFF3238C81CE471592879240 /* Storage */,
+				5396F59D1ACD49F8A82A1667 /* UI */,
+				E8DEDF52E8B4449786A26305 /* Window */,
+			);
+			path = "AHKMini";
+			sourceTree = "<group>";
+		};
+		CBFDAF41B13D42C4BAA92F50 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AAD819B37AA04075B1EA3A20 /* AppDelegate.swift */,
+				82E0957144634AA787206B70 /* main.swift */,
+				586E00567ABB4DC5A664C180 /* Info.plist */,
+			);
+			path = "App";
+			sourceTree = "<group>";
+		};
+		C1731CE8240244E1A87492A6 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				812016E1C4914983AFCFC1DF /* MiniGameScene.swift */,
+			);
+			path = "Game";
+			sourceTree = "<group>";
+		};
+		E61A239170214F4D82B6927C /* GameEngine */ = {
+			isa = PBXGroup;
+			children = (
+				1D4D3B4E0764480E9387DB33 /* ArcadeManager.swift */,
+				00097E71A6F54E1EA3D1F6A2 /* GameProtocol.swift */,
+			);
+			path = "GameEngine";
+			sourceTree = "<group>";
+		};
+		E94627C88ABA41E39A6A9178 /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				52F3C5CE852244C7AE3318E0 /* Break */,
+				386B2B9E8E7D42C4BA7200FF /* Hop */,
+				D218C5EB905D45E297F41041 /* Memory */,
+				B3C0A7905C644A87B50F599A /* Pong */,
+				4FA1C2E034544EC0BF4DCC67 /* Racer */,
+				B21253AF69D241208D4C51E8 /* Runner */,
+				9DDB23F496B543218C6851AA /* Snake */,
+				16BEB7497DA84103BDCC6CEC /* Space */,
+			);
+			path = "Games";
+			sourceTree = "<group>";
+		};
+		52F3C5CE852244C7AE3318E0 /* Break */ = {
+			isa = PBXGroup;
+			children = (
+				B8FA298405504BBBA4D66F56 /* BreakGame.swift */,
+			);
+			path = "Break";
+			sourceTree = "<group>";
+		};
+		386B2B9E8E7D42C4BA7200FF /* Hop */ = {
+			isa = PBXGroup;
+			children = (
+				F262A3DE2D4E43C5B51B3418 /* HopGame.swift */,
+			);
+			path = "Hop";
+			sourceTree = "<group>";
+		};
+		D218C5EB905D45E297F41041 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				0FCD50D67F25495DA4983503 /* MemoryGame.swift */,
+			);
+			path = "Memory";
+			sourceTree = "<group>";
+		};
+		B3C0A7905C644A87B50F599A /* Pong */ = {
+			isa = PBXGroup;
+			children = (
+				95C72E66516A43E6ABD08098 /* PongGame.swift */,
+			);
+			path = "Pong";
+			sourceTree = "<group>";
+		};
+		4FA1C2E034544EC0BF4DCC67 /* Racer */ = {
+			isa = PBXGroup;
+			children = (
+				721CB823819149EF8D50D71E /* RacerGame.swift */,
+			);
+			path = "Racer";
+			sourceTree = "<group>";
+		};
+		B21253AF69D241208D4C51E8 /* Runner */ = {
+			isa = PBXGroup;
+			children = (
+				F5BC1F7D72C84AB18CF24E79 /* GroundNode.swift */,
+				2AD206FB4CD743678E487FDD /* ObstacleNode.swift */,
+				F5B3387FE7B34CE99C3EC726 /* PlayerNode.swift */,
+				EF5ABA44A5514BB78B7464F6 /* RunnerGame.swift */,
+			);
+			path = "Runner";
+			sourceTree = "<group>";
+		};
+		9DDB23F496B543218C6851AA /* Snake */ = {
+			isa = PBXGroup;
+			children = (
+				C593BEAB3DE0447C8999D97A /* SnakeGame.swift */,
+			);
+			path = "Snake";
+			sourceTree = "<group>";
+		};
+		16BEB7497DA84103BDCC6CEC /* Space */ = {
+			isa = PBXGroup;
+			children = (
+				52EBFB2F5D8A409689D0722B /* SpaceGame.swift */,
+			);
+			path = "Space";
+			sourceTree = "<group>";
+		};
+		FFF3238C81CE471592879240 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				C488213C00854438ACD8D763 /* ScoreStore.swift */,
+			);
+			path = "Storage";
+			sourceTree = "<group>";
+		};
+		5396F59D1ACD49F8A82A1667 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6A139EDD696849979DF31D8C /* ArcadeHUDNode.swift */,
+				B24541A198EC493791F28384 /* GameSelectorNode.swift */,
+			);
+			path = "UI";
+			sourceTree = "<group>";
+		};
+		E8DEDF52E8B4449786A26305 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				B07E751EDA424D5290FDE667 /* MiniPanel.swift */,
+				43521DFCDE8541C98A17270F /* MiniWindowController.swift */,
+			);
+			path = "Window";
+			sourceTree = "<group>";
+		};
+		5416A29A501941729AFDD232 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39380D4F9FD2447983F176D8 /* AHKMini.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		60DE3AF18712463B9CC637C2 /* AHKMini */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B577C93156DE463CABD8E1A9 /* Build configuration list for PBXNativeTarget "AHKMini" */;
+			buildPhases = (
+				E3240BA9B5784203A6DA96FF /* Sources */,
+				1AA7F8A80A3348EE94762342 /* Frameworks */,
+				A189EFA4FB0C450AA130BC5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AHKMini;
+			productName = AHKMini;
+			productReference = 39380D4F9FD2447983F176D8 /* AHKMini.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18B3BF18C5E3422981C2B1DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 68476B37FED043E58556EDC0 /* Build configuration list for PBXProject "AHKMini" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE51423342D143019E7674B7;
+			productRefGroup = 5416A29A501941729AFDD232 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60DE3AF18712463B9CC637C2 /* AHKMini */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A189EFA4FB0C450AA130BC5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3240BA9B5784203A6DA96FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74168D85ACD14CE4B86AE169 /* AppDelegate.swift in Sources */,
+				10F2EF38A5EF4EAFA6D8ED77 /* main.swift in Sources */,
+				B7E81A27A5CC436E8DA10F85 /* MiniGameScene.swift in Sources */,
+				F62C601FA2AD4FA6ACEAC6DC /* ArcadeManager.swift in Sources */,
+				32B10B1B1DEB48C680CF6BBA /* GameProtocol.swift in Sources */,
+				ABB9288A57634ED2B90605B7 /* BreakGame.swift in Sources */,
+				0E58B3CCC8E2439DA7FB1411 /* HopGame.swift in Sources */,
+				3DB4D09CFFD14E6896F712E7 /* MemoryGame.swift in Sources */,
+				C7703E4B8AB14B8EBF00044A /* PongGame.swift in Sources */,
+				42BC299CDB1D4B4A8F0331E1 /* RacerGame.swift in Sources */,
+				56BAFB9090F24701BA626262 /* GroundNode.swift in Sources */,
+				173495E0D4D64BB29740E790 /* ObstacleNode.swift in Sources */,
+				01DF4652F33B43809071405F /* PlayerNode.swift in Sources */,
+				9684EA22812E4AA69E16333B /* RunnerGame.swift in Sources */,
+				47C49E007B044BB38868A496 /* SnakeGame.swift in Sources */,
+				4CD773FD2CD047C3A1D67065 /* SpaceGame.swift in Sources */,
+				E6E2AC804E974745BC082CDA /* ScoreStore.swift in Sources */,
+				8D354D12F8154B81B4A7D79B /* ArcadeHUDNode.swift in Sources */,
+				C5A5C3660AD241C19D0DD36B /* GameSelectorNode.swift in Sources */,
+				AB068E1F1AAD493D97BAE9F3 /* MiniPanel.swift in Sources */,
+				2D4217ADC64B40F795483A3A /* MiniWindowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5FB18D55F8214E5491B6CEF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F1B9DEE0CECB4CBAA78A28DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		421FA8776FD546058C5540CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AHKMini/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahk.mini";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EAD8603A030C439689CC5093 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AHKMini/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahk.mini";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68476B37FED043E58556EDC0 /* Build configuration list for PBXProject "AHKMini" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FB18D55F8214E5491B6CEF7 /* Debug */,
+				F1B9DEE0CECB4CBAA78A28DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B577C93156DE463CABD8E1A9 /* Build configuration list for PBXNativeTarget "AHKMini" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				421FA8776FD546058C5540CA /* Debug */,
+				EAD8603A030C439689CC5093 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 18B3BF18C5E3422981C2B1DD /* Project object */;
+}

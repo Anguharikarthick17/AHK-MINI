@@ -1,0 +1,8 @@
+build/
+DerivedData/
+.DS_Store
+*.xcuserstate
+xcuserdata/
+.idea/
+.vscode/
+*.log
