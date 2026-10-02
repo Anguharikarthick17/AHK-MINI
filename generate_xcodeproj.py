@@ -33,6 +33,8 @@ def main():
     app_product_id = gen_id()
     main_group_id = gen_id()
     products_group_id = gen_id()
+    xcassets_file_id = gen_id()
+    xcassets_build_id = gen_id()
     
     native_target_id = gen_id()
     project_id = gen_id()
@@ -52,12 +54,14 @@ def main():
     pbx_build_files = []
     for s, (bid, fid, name) in build_files.items():
         pbx_build_files.append(f"\t\t{bid} /* {name} in Sources */ = {{isa = PBXBuildFile; fileRef = {fid} /* {name} */; }};")
+    pbx_build_files.append(f"\t\t{xcassets_build_id} /* Assets.xcassets in Resources */ = {{isa = PBXBuildFile; fileRef = {xcassets_file_id} /* Assets.xcassets */; }};")
         
     # Generate PBXFileReference section
     pbx_file_refs = []
     for s, (fid, name) in file_refs.items():
         pbx_file_refs.append(f"\t\t{fid} /* {name} */ = {{isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = \"{os.path.basename(s)}\"; sourceTree = \"<group>\"; }};")
     pbx_file_refs.append(f"\t\t{info_plist_id} /* Info.plist */ = {{isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = \"<group>\"; }};")
+    pbx_file_refs.append(f"\t\t{xcassets_file_id} /* Assets.xcassets */ = {{isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = \"<group>\"; }};")
     pbx_file_refs.append(f"\t\t{app_product_id} /* AHKMini.app */ = {{isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AHKMini.app; sourceTree = BUILT_PRODUCTS_DIR; }};")
     
     # Group structure
@@ -72,6 +76,7 @@ def main():
         group_nodes = {}
         # Collect all directories under AHKMini
         all_dirs = set(dir_to_files.keys())
+        all_dirs.add("AHKMini/Resources")
         for d in list(all_dirs):
             parts = d.split(os.sep)
             for i in range(1, len(parts)):
@@ -97,6 +102,8 @@ def main():
                 
             if d == "AHKMini/App":
                 children.append(f"\t\t\t\t{info_plist_id} /* Info.plist */,")
+            if d == "AHKMini/Resources":
+                children.append(f"\t\t\t\t{xcassets_file_id} /* Assets.xcassets */,")
                 
             lines.append(f"""\t\t{gid} /* {basename} */ = {{
 \t\t\tisa = PBXGroup;
@@ -207,6 +214,7 @@ def main():
 \t\t\tisa = PBXResourcesBuildPhase;
 \t\t\tbuildActionMask = 2147483647;
 \t\t\tfiles = (
+\t\t\t\t{xcassets_build_id} /* Assets.xcassets in Resources */,
 \t\t\t);
 \t\t\trunOnlyForDeploymentPostprocessing = 0;
 \t\t}};
@@ -249,6 +257,7 @@ def main():
 \t\t{target_debug_cfg_id} /* Debug */ = {{
 \t\t\tisa = XCBuildConfiguration;
 \t\t\tbuildSettings = {{
+\t\t\t\tASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 \t\t\t\tCODE_SIGN_IDENTITY = "-";
 \t\t\t\tCODE_SIGN_STYLE = Automatic;
 \t\t\t\tCOMBINE_HIDPI_IMAGES = YES;
@@ -266,6 +275,7 @@ def main():
 \t\t{target_release_cfg_id} /* Release */ = {{
 \t\t\tisa = XCBuildConfiguration;
 \t\t\tbuildSettings = {{
+\t\t\t\tASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 \t\t\t\tCODE_SIGN_IDENTITY = "-";
 \t\t\t\tCODE_SIGN_STYLE = Automatic;
 \t\t\t\tCOMBINE_HIDPI_IMAGES = YES;

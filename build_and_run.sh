@@ -45,6 +45,11 @@ if [ -d "${PROJECT_DIR}/AHKMini/Resources/Assets.xcassets" ]; then
     cp -R "${PROJECT_DIR}/AHKMini/Resources/Assets.xcassets" "${RESOURCES_DIR}/"
 fi
 
+# Copy AppIcon.icns if present
+if [ -f "${PROJECT_DIR}/AHKMini/Resources/AppIcon.icns" ]; then
+    cp "${PROJECT_DIR}/AHKMini/Resources/AppIcon.icns" "${RESOURCES_DIR}/"
+fi
+
 # Ad-hoc code signing
 echo "Signing application bundle..."
 codesign --force --deep --sign - "${APP_BUNDLE}"
